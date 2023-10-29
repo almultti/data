@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, init">
+    <title>Card Hover</title>
+    
+    <!-- roboto google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    
+    <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.card{
+  width: 300px;
+  height: 270.5px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;
+  display: inline-bock;
+  float: left;
+}
+     
+
+.card-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card:hover .card-body{
+  right: 0;
+}
+
+.card-body{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right:-100%;
+  position: absolute;
+  background: #1f3d4738;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+
+.card-title{
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.card-sub-title{
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card-info{
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.card-btn{
+  color: #1f3d47;
+  background: #8fabba;
+  padding: 10px 20px;
+  width: 120px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight:500;
+  cursor: pointer;
+}
+    </style>
+  </head>
+  <body class="mcard">
+    <div>
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/sergio635/didactic-train/main/galeria2/01.png" class="card-img" alt="">
+      <div class="card-body">
+        <h1 class="card-title">01</h1>
+        <p class="card-sub-title">Título</p>
+        <p class="card-info">El título suele ubicarse en la parte superior de la infografía.
+</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/sergio635/didactic-train/main/galeria2/02.png" class="card-img" alt="">
+      <div class="card-body">
+        <h1 class="card-title">02</h1>
+        <p class="card-sub-title">Encabezado</p>
+        <p class="card-info">El encabezado se situa justo abajo o al lado del título con letra más pequeña.
+</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/sergio635/didactic-train/main/galeria2/03.png" class="card-img" alt="">
+      <div class="card-body">
+        <h1 class="card-title">03</h1>
+        <p class="card-sub-title">Gráficos</p>
+        <p class="card-info">Los gráficos se situan a lo largo de la infografía.
+</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/sergio635/didactic-train/main/galeria2/04.png" class="card-img" alt="">
+      <div class="card-body">
+        <h1 class="card-title">04</h1>
+        <p class="card-sub-title">Cuerpo / contenido</p>
+        <p class="card-info">El cuerpo o contenido se situa entre el encabezado y la sección de fuentes y créditos.
+</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/sergio635/didactic-train/main/galeria2/05.png" class="card-img" alt="">
+      <div class="card-body">
+        <h1 class="card-title">05</h1>
+        <p class="card-sub-title">Fuentes y créditos</p>
+        <p class="card-info">Las fuentes y los créditos se situan al final de la infografía. En un lugar donde no resalte mucho.</p>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
